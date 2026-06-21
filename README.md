@@ -1,8 +1,10 @@
 # claude-statusline
 
+**English** · [简体中文](README.zh-CN.md)
+
 A colored, informative status line for [Claude Code](https://claude.com/claude-code) — model, directory & git branch, and live **context / 5-hour / weekly** usage with reset countdowns. One installer that **auto-detects [Vibe Island](https://vibeisland.app)** and keeps its notch display working.
 
-![demo](assets/demo.svg)
+![demo](assets/demo.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
