@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="196" viewBox="0 0 820 196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <rect x="0.5" y="0.5" width="819" height="195" rx="10" fill="#0d1117" stroke="#30363d"/>
+
+  <!-- title bar -->
+  <circle cx="24" cy="23" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="23" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="23" r="6" fill="#27c93f"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" fill="#768390">Claude Code — statusline</text>
+  <line x1="0" y1="46" x2="820" y2="46" stroke="#21262d"/>
+
+  <!-- line 1: model · dir · branch -->
+  <text font-size="15" x="24" y="88">
+    <tspan font-weight="bold" fill="#e6edf3">Opus 4.8 (1M context)</tspan><tspan fill="#e6edf3">  myproject </tspan><tspan fill="#6e7681">git:(main)</tspan>
+  </text>
+
+  <!-- line 2: context (green) · usage (yellow) · weekly (red) -->
+  <text font-size="15" x="24" y="118">
+    <tspan fill="#e6edf3">Context </tspan><tspan fill="#2ecc71">███</tspan><tspan fill="#3b424b">░░░░░</tspan><tspan fill="#2ecc71"> 42%</tspan><tspan fill="#e6edf3">   Usage </tspan><tspan fill="#e3b341">████</tspan><tspan fill="#3b424b">░░░░</tspan><tspan fill="#e3b341"> 58%</tspan><tspan fill="#6e7681"> (2h05m)</tspan><tspan fill="#e6edf3">   Weekly </tspan><tspan fill="#f85149">██████</tspan><tspan fill="#3b424b">░░</tspan><tspan fill="#f85149"> 82%</tspan><tspan fill="#6e7681"> (40h00m)</tspan>
+  </text>
+
+  <!-- legend -->
+  <text font-size="12.5" x="24" y="166" fill="#768390">
+    <tspan fill="#2ecc71">█</tspan> green &lt;50    <tspan fill="#e3b341">█</tspan> yellow 50–69    <tspan fill="#f85149">█</tspan> red ≥70    ·    Weekly red line at 80
+  </text>
+</svg>

@@ -1,0 +1,3 @@
+# installer backups (created on the user's machine, never committed)
+*.bak.*
+.DS_Store
