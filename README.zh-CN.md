@@ -25,6 +25,14 @@ Context ███░░░░░ 42%   Usage ████░░░░ 58% (2h05m
 
 所有数据都来自 Claude Code 本身（它喂给状态栏的 `rate_limits` 字段）——**无需任何外部服务或 API key。**
 
+### 颜色随占用变化
+
+进度条**和**数字都随占用变色——翠绿 `<50`、黄 `50–69`、红 `≥70`（Weekly 条会撑到 `80` 才转红）：
+
+![三态对比](assets/states.png)
+
+<p align="center"><img src="assets/demo.gif" alt="颜色随占用变化的动画" width="540"></p>
+
 ## 安装
 
 ```bash
@@ -87,6 +95,10 @@ cd ~/.claude/skills/claude-statusline && git pull && bash install.sh
 
 - **独立模式：** 从 `~/.claude/settings.json` 删掉 `statusLine` 键（旁边有带时间戳的备份），并删除 `~/.claude/statusline.sh`。
 - **Vibe Island 模式：** 删掉 `~/.vibe-island/bin/vibe-island-statusline` 里 `# >>> claude-statusline … >>>` 与 `# <<< claude-statusline … <<<` 标记之间的内容，或还原旁边最新的 `*.bak.*` 备份。
+
+## 参与贡献
+
+欢迎提 Issue / PR —— 提交规范（[Conventional Commits](https://www.conventionalcommits.org/)）与开发/测试步骤见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 致谢
 

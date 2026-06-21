@@ -27,6 +27,14 @@ Context ███░░░░░ 42%   Usage ████░░░░ 58% (2h05m
 
 All data comes from Claude Code itself (the `rate_limits` field it passes to status lines) — **no external service or API key required.**
 
+### Color coding
+
+Bars **and** numbers shift with load — emerald `<50`, amber `50–69`, red `≥70` (the Weekly bar holds off red until `80`):
+
+![color states](assets/states.png)
+
+<p align="center"><img src="assets/demo.gif" alt="bar color changing with load" width="540"></p>
+
 ## Install
 
 ```bash
@@ -89,6 +97,10 @@ cd ~/.claude/skills/claude-statusline && git pull && bash install.sh
 
 - **Standalone mode:** remove the `statusLine` key from `~/.claude/settings.json` (a timestamped backup sits next to it), and delete `~/.claude/statusline.sh`.
 - **Vibe Island mode:** delete the block between the `# >>> claude-statusline … >>>` and `# <<< claude-statusline … <<<` markers in `~/.vibe-island/bin/vibe-island-statusline`, or restore the newest `*.bak.*` backup beside it.
+
+## Contributing
+
+Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for commit conventions ([Conventional Commits](https://www.conventionalcommits.org/)) and dev/test steps.
 
 ## Credits
 
